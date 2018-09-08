@@ -1,0 +1,24 @@
+---
+title: "Ninja Themes"
+subtitle: "⚔ <br> <br>xaringan / remark js theme for the ninjas"
+author: "<br><br>Emi Tanaka"
+date: "<br><br>2018/09/08"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: true 
+    self_contained: false
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: middle center inverse
+
+# For the kunoichi theme, see [here](kunoichi-theme-example.html).

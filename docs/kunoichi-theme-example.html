@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kunoichi ⚔くノ一</title>
+    <meta charset="utf-8">
+    <meta name="author" content="  Emi Tanaka" />
+    <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="assets/kunoichi.css" type="text/css" />
+    <link rel="stylesheet" href="assets/ninpo.css" type="text/css" />
+    <link rel="stylesheet" href="assets/ninjutsu.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Kunoichi ⚔くノ一
+## A xaringan theme for the R-Ladies ninja
+### <br><br>Emi Tanaka
+### <br><br>2018/09/08
+
+---
+
+
+
+
+class: middle center bg-main1
+
+# Kunoichi
+#⚔
+#くノ一
+
+--
+## The Japanese word for female ninja
+
+--
+
+&lt;img src="images/kunoichi.svg" width="40%"&gt;
+
+---
+class: bg-main1 split-30 hide-slide-number
+
+.column.bg-main3[
+]
+.column.slide-in-right[
+.sliderbox.bg-main2.vmiddle[
+.font5[Split Cells]
+]]
+
+
+---
+
+class: split-two white
+
+.column.bg-main1[.content[
+# A .yellow[kunoichi] can use .yellow[ninjutsu] to .green[split columns] easily.
+&lt;br&gt;
+## Define your classes as*
+```{}
+class: split-two white
+```
+
+## Columns are added easily by 
+
+```r
+*.column.bg-main1[.content[
+  content of first column
+]]
+*.column.bg-main2[.content[
+  content of second column
+]]
+```
+]]
+.column.bg-main2[.content.vmiddle.center[
+# See the R-markdown source file for this slide [here](https://github.com/emitanaka/ninja-theme).
+&lt;br&gt;&lt;br&gt;
+# * class white changes all the font to white
+]]
+
+---
+
+class: split-three white
+
+.column.bg-main1[.content[
+# Use as many columns as you want*.
+```{}
+class: split-three white
+```
+
+```r
+*.column.bg-main1[.content[
+  content of first column
+]]
+*.column[.content[
+.split-two[
+.column.bg-black[.content.vmiddle.center[
+      This column just got chopped in half.
+     ]]
+.column.bg-indigo[.content.vmiddle.center[
+      This column just got chopped in half.
+     ]]
+]]]
+*.column.bg-main1[.content[
+  content of third column
+]]
+```
+]]
+.column[.content[
+.split-two[
+.column.bg-black[.content.vmiddle.center[
+      This column just got chopped in half.
+     ]]
+.column.bg-indigo[.content.vmiddle.center[
+      This column just got chopped in half.
+     ]]
+]]]
+.column.bg-main1[.content.vmiddle.center[
+# * only goes up to split-four
+&lt;br&gt;
+# Note: split within split will not work well with later feature.
+]]
+
+---
+
+class: split-three white center
+
+.row.bg-main1[.content.vmiddle[
+# A .yellow[kunoichi] can also use .yellow[ninpo] to .green[split rows] easily.
+]]
+.row.bg-main2[
+.split-three[
+.column[
+]
+.column[
+# Same classes:
+```{}
+class: split-three white
+```
+]
+.column[
+
+]
+]
+]
+.row.bg-main3[.content.vmiddle[
+# Just add .green[.row] instead of .green[.column]
+]]
+
+---
+
+layout: true
+class: split-two 
+
+.column.bg-main1[.content[
+  .split-three[
+ .row[.content[
+ # You can have a border between splits:
+ ```{}
+ class: split-two with-border
+ ```
+ ]]
+  .row[.content[
+     # Or have it thicker
+ ```{}
+ class: split-two with-thick-border
+ ```
+ ]]
+   .row[.content[
+      # And easily change border colors
+ ```{}
+ class: split-two with-thick-border border-green
+ ```
+ Note that to change row-wise border color here, you need to change `.split-three` to `.split-three.border-green`.
+ ]]
+ ]
+]]
+
+.column.bg-main1[.content.center.vmiddle[
+{{content}}
+]]
+
+???
+Define the layout and for sequence hide the appropriate cell.
+
+---
+
+class: hide-row2-col1 hide-row3-col1 with-border
+
+![](images/lee_thin.png)
+
+---
+
+class: hide-row1-col1 hide-row3-col1 with-thick-border 
+count: false
+
+![](images/lee_thick.png)
+
+---
+
+class: hide-row1-col1 hide-row2-col1 with-thick-border border-green
+count: false
+
+![](images/lee_thick_green.png)
+
+---
+
+layout: false
+class: split-three white
+
+.column.bg-red[.content[
+# A .yellow[kunoichi] can use .yellow[ninpo] to easily .green[transform colors].
+```{}
+class: split-three white
+```
+
+```r
+*.column.bg-red[.content[
+  content of first column
+  ]]
+*.column.bg-blue[.content[
+  content of second column
+]]
+*.column.bg-green[.content[
+  content of third column
+]]
+```
+]]
+.column.bg-blue[.content[
+# You can easily .red[change text color] as well
+
+```r
+.bg-white[
+.red[this will be red]
+.green[this will be green]
+]
+```
+Output:
+.bg-white[
+.red[this will be red]
+.green[this will be green]
+]
+
+## Some available colors are:
+.center[
+.bg-brown.pad1[.brown] .bg-gray.pad1[.gray] .bg-blue-gray.pad1[.blue-gray] &lt;br&gt;&lt;br&gt;&lt;br&gt;
+.bg-white.pad1.black[.white] .bg-black.pad1[.black]
+]
+&lt;br&gt;
+### Other list of predefined colors [here](#color).
+
+]]
+.column.bg-green[.content[
+# .yellow[kunoichi] theme comes with four pre-defined shades of purple:
+&lt;br&gt;
+.center[
+.bg-main1.pad1[.bg-main1] &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+.bg-main2.pad1[.bg-main2] &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+.bg-main3.pad1[.bg-main3] &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+.bg-main4.pad1[.bg-main4]
+]
+]]
+
+
+
+---
+
+name: color
+class: split-four black with-thick-border center middle border-white bg-black
+
+.column[
+.split-four[
+.row[.content.red[
+# Row-1, Col-1
+# .red
+]]
+.row.pink[.content[
+# Row-2, Col-1
+# .pink
+]]
+.row.purple[.content[
+# Row-3, Col-1
+# .purple
+]]
+.row.deep-purple[.content[
+# Row-4, Col-1
+# .deep-purple
+]
+]]
+]
+
+.column[
+.split-four[
+.row.cyan[.content[
+# Row-1, Col-2
+# .cyan
+]]
+.row.light-blue[.content[
+# Row-2, Col-2
+# .light-blue
+]]
+.row.blue[.content[
+# Row-3, Col-2
+# .blue
+]]
+.row.indigo[.content[
+# Row-4, Col-2
+# .indigo
+]
+]]
+]
+
+.column[
+.split-four[
+.row.teal[.content[
+# Row-1, Col-3
+# .teal
+]]
+.row.green[.content[
+# Row-2, Col-3
+# .green
+]]
+.row.light-green[.content[
+# Row-3, Col-3
+# .light-green
+]]
+.row.lime[.content[
+# Row-4, Col-3
+# .lime
+]
+]]
+]
+
+.column[
+.split-four[
+.row.deep-orange[.content[
+# Row-1, Col-4
+# .deep-orange
+]]
+.row.orange[.content[
+# Row-2, Col-4
+# .orange
+]]
+.row.amber[.content[
+# Row-3, Col-4
+# .amber
+]]
+.row.yellow[.content[
+# Row-4, Col-4
+# .yellow
+]
+]]
+]
+
+&lt;span style="position:absolute; top:48%; left:28%;z-index:1;background-color:white; font-size:3em; padding:0.2em;color:black"&gt;Material UI colors&lt;/span&gt;
+
+---
+
+
+class: split-four white with-thick-border center middle
+
+.column[
+.split-four[
+.row.bg-red[.content[
+# Row-1, Col-1
+# .bg-red
+]]
+.row.bg-pink[.content[
+# Row-2, Col-1
+# .bg-pink
+]]
+.row.bg-purple[.content[
+# Row-3, Col-1
+# .bg-purple
+]]
+.row.bg-deep-purple[.content[
+# Row-4, Col-1
+# .bg-deep-purple
+]
+]]
+]
+
+.column[
+.split-four[
+.row.bg-cyan[.content[
+# Row-1, Col-2
+# .bg-cyan
+]]
+.row.bg-light-blue[.content[
+# Row-2, Col-2
+# .bg-light-blue
+]]
+.row.bg-blue[.content[
+# Row-3, Col-2
+# .bg-blue
+]]
+.row.bg-indigo[.content[
+# Row-4, Col-2
+# .bg-indigo
+]
+]]
+]
+
+.column[
+.split-four[
+.row.bg-teal[.content[
+# Row-1, Col-3
+# .bg-teal
+]]
+.row.bg-green[.content[
+# Row-2, Col-3
+# .bg-green
+]]
+.row.bg-light-green[.content[
+# Row-3, Col-3
+# .bg-light-green
+]]
+.row.bg-lime[.content[
+# Row-4, Col-3
+# .bg-lime
+]
+]]
+]
+
+.column[
+.split-four[
+.row.bg-deep-orange[.content[
+# Row-1, Col-4
+# .bg-deep-orange
+]]
+.row.bg-orange[.content[
+# Row-2, Col-4
+# .bg-orange
+]]
+.row.bg-amber[.content[
+# Row-3, Col-4
+# .bg-amber
+]]
+.row.bg-yellow[.content[
+# Row-4, Col-4
+# .bg-yellow
+]
+]]
+]
+
+&lt;span style="position:absolute; top:48%; left:28%;z-index:1;background-color:black; font-size:3em; padding:0.2em;"&gt;Material UI colors&lt;/span&gt;
+---
+
+
+layout: true
+class: shuriken-200 white 
+
+.blade1.bg-red.content.center[
+# I contemplated naming `split` as bunshin, the Japanese word for clone.
+]]
+.blade2.bg-green[.content.vertical-rl.center[
+# But I figured it wasn't a clone.
+]]
+.blade3.bg-deep-purple[.content.center[
+# I also wouldn't make you [remember words](https://slides.yihui.name/xaringan) from a reference you may not know.
+]]
+.blade4.bg-orange[.content.sideways-rl.center.vmiddle[
+# I lie.
+]]
+.hole.bg-black[.content.center.vmiddle[
+{{content}}
+]]
+
+---
+
+class: hide-blade2 hide-blade3 hide-blade4 hide-hole
+
+---
+
+class: hide-blade3 hide-blade4 hide-hole
+count: false
+
+---
+
+class: hide-blade4 hide-hole
+count: false
+
+---
+
+class: hide-hole
+count: false
+
+---
+
+count: false 
+
+# This is 
+## `class: shuriken-200`
+
+---
+
+class: shuriken-reverse-200
+
+# This is 
+## `class: shuriken-reverse-200`
+
+---
+
+layout: false
+class: shuriken-reverse-100 white with-thick-border border-double
+
+
+.blade1.bg-red.content[
+# This is .blade1
+]]
+.blade2.bg-green[.content.vertical-rl[
+# This is .blade2
+]]
+.blade3.bg-deep-purple[.content[
+# This is .blade3
+]]
+.blade4.bg-orange[.content.sideways-rl[.center[
+# This is .blade4
+]]]
+.hole.bg-black[.content.center.vmiddle[
+# This is .hole 
+## `class: shuriken-100`
+## with 
+## `white`
+## `with-thick-border`
+## `border-double`
+]]
+
+---
+
+class: shuriken-300 white with-border border-black
+
+
+.blade1.bg-red[.content[
+# To build this slide, define your shuriken class. Then your slide content should contain 
+
+```r
+      .blade1[.content[]]      .blade4[.content[]]
+      .blade2[.content[]]      .hole[.content[]]
+      .blade3[.content[]]
+```
+]]
+.blade2.bg-green[.content.vertical-rl[
+# To write vertically
+
+```r
+.blade2[.content.vertical-rl[]]
+```
+]]
+.blade3.bg-deep-purple[.content[
+
+```r
+.blade2[.content.sideways-rl[]]
+```
+# Vertical writing may need manual fixes however. 
+## A future update may fix this but if you have a solution, feel free to put in a pull request <span>&lt;i class="fab  fa-github faa-vertical animated "&gt;&lt;/i&gt;</span>. 
+]]
+.blade4.bg-orange[.content.sideways-rl.center[
+# To write vertically the other way
+# &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;↓
+]]
+.hole.bg-black[.content.center[
+## `class: shuriken-300`
+]]
+
+---
+
+class: bg-main1 center middle hide-slide-number
+
+.reveal-text.bg-main2[.pad1[
+.font4[Cell Sequential Reveal]
+]]
+
+---
+
+layout: true
+class: split-three with-thick-border
+
+.column.bg-main1[.content[
+# Making split cells is great but to reveal it one slide at a time, I copied the content of the slide multiple times and deleted cell content that I wanted to hide. That's what I did for the slide [here](https://emi-tanaka-asc2018.netlify.com/#2).
+]]
+.column.bg-main2[.content[
+# When I made changes to one slide, I had to make the changes for other slides.
+&lt;br&gt;
+# .orange[It was painful.]
+&lt;br&gt;
+# Using the power of .yellow[ninjutsu] this is made much easier. 
+]]
+.column.bg-main3[.content[
+# Using .yellow[ninjutsu], you only need to maintain .yellow[one layout slide].
+&lt;br&gt;
+# It is a matter of then defining certain classes to reveal cells in subsequent slides.
+# .color-main1[Do you want to learn this power?]
+
+]]
+
+---
+
+class: show-100
+
+---
+
+class: show-110
+count: false
+
+---
+
+count: false
+
+---
+
+layout: false
+class: split-33 with-thick-border
+
+.column.bg-main1[.content.vmiddle[
+.center[
+# Layout Slide
+]
+&lt;br&gt;&lt;br&gt;
+## This is where you should write out full the content of your slides. 
+]]
+.column[.content[
+# First you need to define your full slide structure.
+```{}
+layout: true
+class: split-four 
+
+.column.bg-main1[.content.vmiddle.center[
+# Content 1
+]]
+.column.bg-main2[.content.vmiddle.center[
+# Content 2
+]]
+.column.bg-main3[.content.vmiddle.center[
+# Content 3
+]]
+.column.bg-main4[.content.vmiddle.center[
+# Content 4
+]]
+
+
+```
+
+### Note: .vmiddle.center centers the content vertically and horizontally.
+]]
+
+---
+
+class: split-33 with-thick-border
+
+.column.bg-main1[.content.vmiddle[
+# Revealing slide content from left to right column
+]]
+.column[.content[
+## In the subsequent slides define the classes as you want to show it
+```{}
+---
+
+class: show-1000
+
+---
+
+class: show-1100
+count: false
+
+---
+
+class: show-1110
+count: false
+
+---
+
+count: false
+
+```
+
+### Setting count:false stops from incrementing the slide number. 
+### .red[Set layout:false] for the next slide to stop layout template!
+]]
+
+---
+
+class: split-33 with-thick-border
+
+.column.bg-main1[.content.vmiddle[
+# Column reveal can be whatever order you like.
+]]
+.column[.content[
+## This shows the inner two columns only first then the outer columns only in the next slide. 
+```{}
+---
+
+class: show-0110
+
+---
+
+class: show-1001
+count: false
+
+```
+## Or equivalently you can use 
+```{}
+---
+
+class: hide-col1 hide-col4
+
+---
+
+class: hide-col2 hide-col3
+count: false
+
+```
+
+
+]]
+
+---
+
+
+class: bg-main1 middle center
+
+# There are more ways to do these reveals.
+
+--
+# This will be for another day. 
+--
+
+&lt;br&gt;
+# You'll find future updates [<span>&lt;i class="fab  fa-github faa-vertical animated "&gt;&lt;/i&gt;</span> here](https://github.com/emitanaka/ninja-theme) or &lt;br&gt;you'll hear about it [<span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;</span> here](https://twitter.com/statsgen).
+
+--
+&lt;br&gt;
+# Suggestions and comments welcome.
+
+--
+&lt;br&gt;
+# Enjoy the power of .yellow[ninjutsu] fellow ninja.
+
+---
+
+class: bg-main1 
+
+# Soon to come 
+.font2[
+* more explanation for sequential reveal for split cells
+* explanation for easy image insertion in cells
+* ninpo for animated transition slides
+* shinobi theme with blue-centric colours and right overlay in title slide (hint: replace kunoichi with shinobi in the css)
+* and others...
+]
+
+## (or you may be able to figure out the features looking at the code)
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

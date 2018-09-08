@@ -1,0 +1,105 @@
+.sliderbox  { 
+  width: 100%; 
+  padding:1em;
+}
+
+.slide-in-left {
+  -webkit-animation: slideInFromLeft 1s ease-in; 
+  animation: slideInFromLeft 1s ease-in ; 
+}
+
+.slide-in-right {
+  -webkit-animation: slideInFromRight 1s ease-in; 
+  animation: slideInFromRight 1s ease-in ; 
+}
+
+@media print {
+  .slide-in-right, .slide-in-left, .reveal-text, .reveal-text::after {
+    animation: none;
+    -webkit-animation: none;
+  }
+
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+@page {
+  size: 1024px 768px;
+  margin: 0;
+}
+
+
+/************* animation ****************/
+
+@-webkit-keyframes slideInFromRight { 0% {transform: translateX(100%);}}
+@keyframes slideInFromRight { 0% { transform: translateX(100%); }}
+@-webkit-keyframes slideInFromLeft { 0% { transform: translateX(-100%); }}
+@keyframes slideInFromLeft { 0% { transform: translateX(-100%); }}
+
+
+.reveal-text,
+.reveal-text::after {
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-duration: 800ms;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.reveal-text {
+	position: relative;
+	display: block;
+	animation-name: reveal-text;
+	white-space: nowrap;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		pointer-events: none;
+		animation-name: revealer-text;
+	}
+	
+}
+
+
+@keyframes reveal-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes revealer-text {
+	
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
+}
