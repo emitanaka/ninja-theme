@@ -704,25 +704,233 @@ count: false
 
 ---
 
+layout: true
+class: split-two with-border
 
-class: bg-main1 middle center
+.column[
+  .split-five[
+  .row.bg-main1[.content[
+### This slide can be set-up using the structure on the right.
+  ]]
+  .row.bg-main2[.content[
+### The cells are hidden using 
+### .yellow[class: hide-row3-col1 hide-row4-col1 hide-row5-col1]
+  ]]
+  .row.bg-main3[.content[
+### If you can see this cell but not below cells then this is: 
+### .yellow[class: hide-row4-col1 hide-row5-col1]
+  ]]
+  .row.bg-main4[.content[
+### Be sure to check out the corresponding [.purple[R markdown source]](https://github.com/emitanaka/ninja-theme) file for a better idea of how to use it for yourself.
+  ]]
+  .row.bg-main5[.content[
+### There is no need to define the class when revealing all but add .deep-orange[count: false] to stop slide count increment.
+  ]]
+]]
+.column[.content[
 
-# There are more ways to do these reveals.
+```{}
+class: split-two with-border
 
---
-# This will be for another day. 
---
+.column.bg-main1[
+  .split-five[
+  .row.bg-main1[.content[
+    Row 1, Column 1 content.
+  ]]
+  .row.bg-main2[.content[
+    Row 2, Column 1 content.
+  ]]
+  .row.bg-main3[.content[
+    Row 3, Column 1 content.
+  ]]
+  .row.bg-main4[.content[
+    Row 4, Column 1 content.
+  ]]
+  .row.bg-main5[.content[
+    Row 5, Column 1 content.
+  ]]
+]]
+.column[.content[
+  Second column content.
+]]
+```
 
-<br>
-# You'll find future updates [`r anicon::faa("github", animate="vertical")` here](https://github.com/emitanaka/ninja-theme) or <br>you'll hear about it [`r anicon::faa("twitter", animate="float")` here](https://twitter.com/statsgen).
+]]
 
---
-<br>
-# Suggestions and comments welcome.
+---
 
---
-<br>
-# Enjoy the power of .yellow[ninjutsu] fellow ninja.
+class: hide-row2-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1
+
+---
+
+class: hide-row3-col1 hide-row4-col1 hide-row5-col1
+count: false
+
+---
+
+class: hide-row4-col1 hide-row5-col1
+count: false
+
+---
+
+class: hide-row5-col1
+count: false
+
+---
+
+count: false
+
+---
+
+layout: false
+class: split-five with-border border-black
+
+.column[.content[
+.split-five[
+.row.bg-main1[.content.center.vmiddle[
+# There is
+]]
+.row.bg-main2[.content[
+
+]]
+.row.bg-main3[.content[
+
+]]
+.row.bg-main4[.content[
+
+]]
+.row.bg-main5[.content[
+
+]]
+]]]
+.column[.content[
+.split-five[
+.row.bg-main1[.content.center.vmiddle[
+# support
+]]
+.row.bg-main2[.content[
+
+]]
+.row.bg-main3[.content[
+
+]]
+.row.bg-main4[.content.vmiddle.center[
+# Next up
+]]
+.row.bg-main5[.content[
+
+]]
+]]]
+.column[.content[
+.split-five[
+.row.bg-main1[.content.center.vmiddle[
+# upto 
+]]
+.row.bg-main2[.content[
+]]
+.row.bg-main3[.content.nopadding[
+.img-fill[![](bkgs/bg1.jpg)]
+]]
+
+.row.bg-main4[.content[
+
+]]
+.row.bg-main5[.content[
+
+]]
+]]]
+.column[.content[
+.split-five[
+.row.bg-main1[.content.center.vmiddle[
+# five-by-five
+]]
+.row.bg-main2[.content[
+
+]]
+.row.bg-main3[.content[
+
+]]
+.row.bg-main4[.content.vmiddle.center[
+# .yellow[images.]
+]]
+.row.bg-main5[.content[
+
+]]
+]]]
+.column[.content[
+.split-five[
+.row.bg-main1[.content.center.vmiddle[
+# cells. 
+]]
+.row.bg-main2[.content[
+
+]]
+.row.bg-main3[.content[
+
+]]
+.row.bg-main4[.content[
+
+]]
+.row.bg-main5[.content[
+
+]]
+]]]
+
+
+---
+
+class: split-70 hide-slide-number
+background-image: url("bkgs/bg2.jpg")
+background-size: cover
+
+.column.slide-in-left[
+.sliderbox.vmiddle.shade_main.center[
+.font5[Image inseration]]]
+.column[
+]
+
+---
+
+class: split-three
+
+.column.bg-main1[.content[
+# Image insertion can be tricky and a good solution is still in development. 
+
+.bottom_abs.content[
+# Here is some working solution to embed images.
+]
+]]
+.column[.split-33[
+.row[.content.nopadding[
+.img-fill[![](bkgs/bg1.jpg)]
+]]
+.row.bg-main1[.content[
+# Here we insert 
+```{}
+.row[.content.nopadding[
+.img-fill[![](bkgs/bg1.jpg)]
+]]
+```
+## We need the .yellow[nopadding] so it knows that images should not be padded.
+]]
+]]
+.column.bg-main1[.split-three[
+.row[.content[
+# Here we have
+```{}
+.row[.content.nopadding[
+.fig90[![](bkgs/bg1.jpg)]
+]]
+```
+]]
+.row[.content.nopadding[
+.fig90[![](bkgs/bg1.jpg)]
+]]
+.row.bg-main1[.content[
+## There may be some manual fixing needed for some cases although these should work well for most cases.
+]]
+]]
+
 
 ---
 
@@ -730,11 +938,11 @@ class: bg-main1
 
 # Soon to come 
 .font2[
-* more explanation for sequential reveal for split cells
-* explanation for easy image insertion in cells
-* ninpo for animated transition slides
-* shinobi theme with blue-centric colours and right overlay in title slide (hint: replace kunoichi with shinobi in the css)
+* .yellow[ninpo] for animated transition slides
+* explanation of .yellow[shinobi] theme with blue-centric colours and right overlay in title slide (hint: replace kunoichi with shinobi in the css)
 * and others...
 ]
 
 ## (or you may be able to figure out the features looking at the code)
+
+## You'll find future updates [`r anicon::faa("github", animate="vertical")` here](https://github.com/emitanaka/ninja-theme) or <br>you'll hear about it [`r anicon::faa("twitter", animate="float")` here](https://twitter.com/statsgen).

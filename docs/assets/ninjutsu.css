@@ -55,11 +55,11 @@
   margin-left: -2%;
 }
 
-.object-fit_fill img { object-fit: fill }
-.object-fit_contain img { object-fit: contain }
-.object-fit_cover img { object-fit: cover }
-.object-fit_none img { object-fit: none }
-.object-fit_scale-down img { object-fit: scale-down }
+.img-fill img { object-fit: fill; height:100%; width:100%; overflow: hidden;}
+.img-contain img { object-fit: contain; height:100%; width:100%;  overflow: hidden}
+.img-cover img { object-fit: cover; height:100%; width:100%;  overflow: hidden}
+.img-none img { object-fit: none; height:100%; width:100%; }
+
 
 /*********** background-color ***********/
 .bg-red { background-color: var(--color-red); }
@@ -443,6 +443,7 @@ ul li { padding: 5px 0px; }
 }
 
 .nopadding > p {
+  padding: 0!important;
   -webkit-margin-before:0;
   -webkit-margin-after:0;
 }
@@ -767,6 +768,16 @@ pre {
 .hide-row4-col4 > .row:nth-of-type(4) .column:nth-of-type(4)>.content {visibility: hidden;}
 .hide-row4-col5 > .column:nth-of-type(5) .row:nth-of-type(4)>.content {visibility: hidden;}
 .hide-row4-col5 > .row:nth-of-type(4) .column:nth-of-type(5)>.content {visibility: hidden;}
+.hide-row5-col1 > .column:first-of-type .row:nth-of-type(5) >.content {visibility: hidden;}
+.hide-row5-col1 > .row:nth-of-type(5) .column:first-of-type >.content {visibility: hidden;}
+.hide-row5-col2 > .column:nth-of-type(2) .row:nth-of-type(5)>.content {visibility: hidden;}
+.hide-row5-col2 > .row:nth-of-type(5) .column:nth-of-type(2)>.content {visibility: hidden;}
+.hide-row5-col3 > .column:nth-of-type(4) .row:nth-of-type(5)>.content {visibility: hidden;}
+.hide-row5-col3 > .row:nth-of-type(5) .column:nth-of-type(4)>.content {visibility: hidden;}
+.hide-row5-col4 > .column:nth-of-type(4) .row:nth-of-type(5)>.content {visibility: hidden;}
+.hide-row5-col4 > .row:nth-of-type(5) .column:nth-of-type(4)>.content {visibility: hidden;}
+.hide-row5-col5 > .column:nth-of-type(5) .row:nth-of-type(5)>.content {visibility: hidden;}
+.hide-row5-col5 > .row:nth-of-type(5) .column:nth-of-type(5)>.content {visibility: hidden;}
 
 .show-00>.row:first-of-type>.content {visibility: hidden;}
 .show-00>.row:nth-of-type(2)>.content {visibility: hidden;}
