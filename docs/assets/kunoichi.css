@@ -6,10 +6,12 @@
     --main-color2: #9C27B0;
     --main-color3: #BA68C8;
     --main-color4: #CE93D8;
+    --main-color5: white;
     --text-color1: white;
     --text-color2: white;
     --text-color3: white;
     --text-color4: white;
+    --text-color5: black;
     --text-opacity: white;
     --link-color: #ecadec;
     --alert-color: #CF3C18;
@@ -58,12 +60,14 @@
 .bg-main2 { background-color: var(--main-color2); color: var(--text-color2);}
 .bg-main3 { background-color: var(--main-color3); color: var(--text-color3);}
 .bg-main4 { background-color: var(--main-color4); color: var(--text-color4);}
+.bg-main5 { background-color: var(--main-color4); color: var(--text-color5);}
 .bgcolor_alert { background-color: var(--alert-color)!important; color: var(--text-alert); }
 
 .color-main1 { color: var(--main-color1);}
 .color-main2 { color: var(--main-color2);}
 .color-main3 { color: var(--main-color3);}
 .color-main4 { color: var(--main-color4);}
+.color-main5 { color: var(--main-color5);}
 .color-alert { color: var(--alert-color);}
 
 .shade_main  {
