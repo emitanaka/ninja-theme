@@ -1,6 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
 
+/******************
+ kunoichi.css must also be coupled with ninjutsu.css to be effective
+ See https://emitanaka.github.io/ninja-theme/kunoichi-theme-example.html for an example.
+
+******************/
+
+
 :root {
     --main-color1: rgba(86,36,87,1);
     --main-color2: #9C27B0;
@@ -27,12 +34,12 @@
 }
 
 .title-slide {
-  width: 60%; 
+  width: 60%;
   text-align: left!important;
-  height:100%; 
+  height:100%;
   display: table;
-  position: absolute; 
-  top: 0; 
+  position: absolute;
+  top: 0;
   right: 0;
   background-color: var(--color-opacity70);
   color: white;
@@ -44,7 +51,7 @@
   background-image: var(--title-background), var(--logo);
   background-size:  10%, cover;
   background-position: left bottom, 100%;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 
@@ -87,8 +94,8 @@ h1, h2, h3, body{
   font-family: 'Yanone Kaffeesatz';
   font-weight: normal;
 }
-.remark-code, .remark-inline-code { 
-  font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; 
+.remark-code, .remark-inline-code {
+  font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;
   color: var(--code-text-color);
   background-color: var(--code-background);
 }
@@ -104,12 +111,3 @@ h3 { font-size: 1.6em; }
 h4 { font-size: 1em; }
 
 a { color: var(--link-color); text-decoration: none; }
-
-
-
-
-
-
-
-
-
