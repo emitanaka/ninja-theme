@@ -1,13 +1,12 @@
 ---
 title: "Kunoichi ⚔くノ一"
 subtitle: "A xaringan theme for the R-Ladies ninja"
-author: "<br><br>Emi Tanaka"
-date: "<br><br>2018/09/08"
+author: "<br><br>Emi Tanaka &nbsp;`r anicon::faa('twitter', animate='float', rtext='@statsgen')`"
+date: "<br><br>2018-09-08, Updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["assets/kunoichi.css", "assets/ninpo.css", "assets/ninjutsu.css"]
-    seal: true 
+    css: ["kunoichi", "ninjutsu" , "assets/ninpo.css"]
     self_contained: false
     nature:
       ratio: "16:9"
@@ -34,6 +33,25 @@ class: middle center bg-main1
 <img src="images/kunoichi.svg" width="40%">
 
 ---
+
+class: middle bg-main1
+
+
+## Now part of latest development version of `xaringan`
+<br>
+### `devtools::install_github('yihui/xaringan')`
+<br>
+### and add
+
+```
+output:
+  xaringan::moon_reader:
+    css: ["kunoichi", "ninjutsu"]
+```
+
+
+---
+
 class: bg-main1 split-30 hide-slide-number
 
 .column.bg-main3[
@@ -780,6 +798,87 @@ count: false
 
 count: false
 
+---
+
+layout: true
+class: split-two with-border border-black
+
+.column[
+  .split-five[
+  .row.bg-main1[.content[
+### Now let's show the `gray` and `fade` features. 
+  ]]
+  .row.bg-main2[.content[
+### You can use it the same as `hide` but replace with `fade` or `gray`
+  ]]
+  .row.bg-main3[.content[
+### You can combine both as needed.
+  ]]
+  .row.bg-main4[.content[
+### Do check out the corresponding [.purple[R markdown source]](https://github.com/emitanaka/ninja-theme) file for a better idea of how to use it for yourself.
+  ]]
+  .row.bg-main5[.content[
+### Enjoy using `ninjutsu`.
+  ]]
+]]
+.column[.content[
+
+```{}
+class: split-two with-border
+
+.column.bg-main1[
+  .split-five[
+  .row.bg-main1[.content[
+    Row 1, Column 1 content.
+  ]]
+  .row.bg-main2[.content[
+    Row 2, Column 1 content.
+  ]]
+  .row.bg-main3[.content[
+    Row 3, Column 1 content.
+  ]]
+  .row.bg-main4[.content[
+    Row 4, Column 1 content.
+  ]]
+  .row.bg-main5[.content[
+    Row 5, Column 1 content.
+  ]]
+]]
+.column[.content[
+  Second column content.
+]]
+```
+
+]]
+
+---
+class: fade-row2-col1 fade-row3-col1 fade-row4-col1 fade-row5-col1
+---
+count: false
+class: fade-row1-col1 fade-row3-col1 fade-row4-col1 fade-row5-col1
+---
+count: false
+class: fade-row1-col1 fade-row2-col1 fade-row4-col1 fade-row5-col1
+---
+count: false
+class: fade-row1-col1 fade-row2-col1 fade-row3-col1 fade-row5-col1
+---
+count: false
+class: fade-row1-col1 fade-row2-col1 fade-row3-col1 fade-row4-col1
+---
+class: gray-row2-col1 gray-row3-col1 gray-row4-col1 gray-row5-col1
+---
+count: false
+class: gray-row1-col1 gray-row3-col1 gray-row4-col1 gray-row5-col1
+---
+count: false
+class: gray-row1-col1 gray-row2-col1 gray-row4-col1 gray-row5-col1
+---
+count: false
+class: gray-row1-col1 gray-row2-col1 gray-row3-col1 gray-row5-col1
+---
+count: false
+class: gray-row1-col1 gray-row2-col1 gray-row3-col1 gray-row4-col1
 ---
 
 layout: false

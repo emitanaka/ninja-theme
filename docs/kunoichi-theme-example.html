@@ -3,12 +3,12 @@
   <head>
     <title>Kunoichi ⚔くノ一</title>
     <meta charset="utf-8">
-    <meta name="author" content="  Emi Tanaka" />
+    <meta name="author" content="  Emi Tanaka  <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;@statsgen</span>" />
+    <link href="libs/remark-css/kunoichi.css" rel="stylesheet" />
+    <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
     <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
     <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
-    <link rel="stylesheet" href="assets/kunoichi.css" type="text/css" />
     <link rel="stylesheet" href="assets/ninpo.css" type="text/css" />
-    <link rel="stylesheet" href="assets/ninjutsu.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -16,8 +16,8 @@ class: center, middle, inverse, title-slide
 
 # Kunoichi ⚔くノ一
 ## A xaringan theme for the R-Ladies ninja
-### <br><br>Emi Tanaka
-### <br><br>2018/09/08
+### <br><br>Emi Tanaka  <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;@statsgen</span>
+### <br><br>2018-09-08, Updated: 2018-09-22
 
 ---
 
@@ -38,6 +38,25 @@ class: middle center bg-main1
 &lt;img src="images/kunoichi.svg" width="40%"&gt;
 
 ---
+
+class: middle bg-main1
+
+
+## Now part of latest development version of `xaringan`
+&lt;br&gt;
+### `devtools::install_github('yihui/xaringan')`
+&lt;br&gt;
+### and add
+
+```
+output:
+  xaringan::moon_reader:
+    css: ["kunoichi", "ninjutsu"]
+```
+
+
+---
+
 class: bg-main1 split-30 hide-slide-number
 
 .column.bg-main3[
@@ -791,6 +810,87 @@ count: false
 
 count: false
 
+---
+
+layout: true
+class: split-two with-border border-black
+
+.column[
+  .split-five[
+  .row.bg-main1[.content[
+### Now let's show the `gray` and `fade` features. 
+  ]]
+  .row.bg-main2[.content[
+### You can use it the same as `hide` but replace with `fade` or `gray`
+  ]]
+  .row.bg-main3[.content[
+### You can combine both as needed.
+  ]]
+  .row.bg-main4[.content[
+### Do check out the corresponding [.purple[R markdown source]](https://github.com/emitanaka/ninja-theme) file for a better idea of how to use it for yourself.
+  ]]
+  .row.bg-main5[.content[
+### Enjoy using `ninjutsu`.
+  ]]
+]]
+.column[.content[
+
+```{}
+class: split-two with-border
+
+.column.bg-main1[
+  .split-five[
+  .row.bg-main1[.content[
+    Row 1, Column 1 content.
+  ]]
+  .row.bg-main2[.content[
+    Row 2, Column 1 content.
+  ]]
+  .row.bg-main3[.content[
+    Row 3, Column 1 content.
+  ]]
+  .row.bg-main4[.content[
+    Row 4, Column 1 content.
+  ]]
+  .row.bg-main5[.content[
+    Row 5, Column 1 content.
+  ]]
+]]
+.column[.content[
+  Second column content.
+]]
+```
+
+]]
+
+---
+class: fade-row2-col1 fade-row3-col1 fade-row4-col1 fade-row5-col1
+---
+count: false
+class: fade-row1-col1 fade-row3-col1 fade-row4-col1 fade-row5-col1
+---
+count: false
+class: fade-row1-col1 fade-row2-col1 fade-row4-col1 fade-row5-col1
+---
+count: false
+class: fade-row1-col1 fade-row2-col1 fade-row3-col1 fade-row5-col1
+---
+count: false
+class: fade-row1-col1 fade-row2-col1 fade-row3-col1 fade-row4-col1
+---
+class: gray-row2-col1 gray-row3-col1 gray-row4-col1 gray-row5-col1
+---
+count: false
+class: gray-row1-col1 gray-row3-col1 gray-row4-col1 gray-row5-col1
+---
+count: false
+class: gray-row1-col1 gray-row2-col1 gray-row4-col1 gray-row5-col1
+---
+count: false
+class: gray-row1-col1 gray-row2-col1 gray-row3-col1 gray-row5-col1
+---
+count: false
+class: gray-row1-col1 gray-row2-col1 gray-row3-col1 gray-row4-col1
 ---
 
 layout: false
