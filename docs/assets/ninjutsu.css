@@ -1342,7 +1342,7 @@
 .show-10111>.row:nth-of-type(2)>.content {visibility: hidden;}
 .show-01111>.row:first-of-type>.content {visibility: hidden;}
 
-.content > h1, h2, h3, p { padding-left: 2%;padding-right: 2%; }
+.content > h1, h2, h3, h4, h5, h6, h7, h8, p { padding-left: 2%;padding-right: 2%; }
 
 .horizontal-tb { writing-mode: lr-tb; }
 .vertical-rl, .sideways-rl {
