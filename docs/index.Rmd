@@ -6,6 +6,7 @@ date: "<br><br>2018/09/08"
 output:
   xaringan::moon_reader:
     lib_dir: libs
+    css: ["assets/default.css", "assets/default-fonts.css"]
     seal: true 
     self_contained: false
     nature:
