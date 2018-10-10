@@ -6,7 +6,7 @@ date: "<br><br>2018-09-08, Updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["assets/kunoichi.css", "assets/ninjutsu.css" , "assets/ninpo.css"]
+    css: ["kunoichi.css", "ninjutsu.css" , "assets/ninpo.css"]
     self_contained: false
     nature:
       ratio: "16:9"
