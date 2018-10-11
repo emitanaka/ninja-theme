@@ -21,4 +21,4 @@ options(htmltools.dir.version = FALSE)
 
 class: middle center inverse
 
-# For the kunoichi theme, see [here](theme/kunoichi/kunoichi-theme-example.html).
+# For the kunoichi theme, see [here](themes/kunoichi/kunoichi-theme-example.html).

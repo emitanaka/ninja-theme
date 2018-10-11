@@ -6,7 +6,7 @@ xaringan / remark js ninja themes
 You can find the R markdown for the source file for [these slides](https://emitanaka.github.io/ninja-theme) in `themes/kunoichi/kunoichi-theme-example.Rmd`.
 
 
-![](themes/kunoichi/images/kunoichi-showcase.gif)
+![](docs/themes/kunoichi/images/kunoichi-showcase.gif)
 
 # Featured Ninja and their Ninja Slides
 
