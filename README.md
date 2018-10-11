@@ -3,7 +3,7 @@ xaringan / remark js ninja themes
 ======
 
 
-You can find the R markdown for the source file for [these slides](https://emitanaka.github.io/ninja-theme) in `themes/kunoichi/kunoichi-theme-example.Rmd`.
+You can find the R markdown for the source file for [these slides](https://emitanaka.github.io/ninja-theme) in `docs/themes/kunoichi/kunoichi-theme-example.Rmd`.
 
 
 ![](docs/themes/kunoichi/images/kunoichi-showcase.gif)
