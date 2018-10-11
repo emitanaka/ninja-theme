@@ -10,5 +10,5 @@ You can find the R markdown for the source file for [these slides](https://emita
 
 # Featured Ninja and their Ninja Slides
 
-* [Sarah Romanes](https://twitter.com/sarah_romanes) - [Machine Learning 101](https://sarahromanes.github.io/r-ladies-ML-1)
-* [William Chase](https://twitter.com/W_R_Chase) - [What I Wish I Knew When I Started R](https://www.williamrchase.com/slides/intro_r_anthropology_2018)
+* [Sarah Romanes](https://twitter.com/sarah_romanes) - [Machine Learning 101](https://sarahromanes.github.io/r-ladies-ML-1) ([source files](https://github.com/sarahromanes/r-ladies-ML-1))
+* [William Chase](https://twitter.com/W_R_Chase) - [What I Wish I Knew When I Started R](https://www.williamrchase.com/slides/intro_r_anthropology_2018) ([source files](https://github.com/will-r-chase/blog/tree/master/static/slides))
