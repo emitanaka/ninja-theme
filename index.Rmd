@@ -2,11 +2,10 @@
 title: "Ninja Themes"
 subtitle: "⚔ <br> <br>xaringan / remark js theme for the ninjas"
 author: "<br><br>Emi Tanaka"
-date: "<br><br>2018/09/08"
+date: "<br>2018-09-08<br>Last Updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["assets/default.css", "assets/default-fonts.css"]
     seal: true 
     self_contained: false
     nature:
@@ -22,4 +21,4 @@ options(htmltools.dir.version = FALSE)
 
 class: middle center inverse
 
-# For the kunoichi theme, see [here](kunoichi-theme-example.html).
+# For the kunoichi theme, see [here](theme/kunoichi/kunoichi-theme-example.html).
