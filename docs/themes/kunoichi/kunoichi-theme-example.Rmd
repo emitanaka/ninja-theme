@@ -984,7 +984,7 @@ background-size: cover
 
 .column.slide-in-left[
 .sliderbox.vmiddle.shade_main.center[
-.font5[Image inseration]]]
+.font5[Image insertion]]]
 .column[
 ]
 
