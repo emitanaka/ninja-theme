@@ -648,6 +648,7 @@ class: split-four
 ```
 
 ### Note: .vmiddle.center centers the content vertically and horizontally.
+### Note: you need to have a .content container, otherwise hide may not work
 ]]
 
 ---
